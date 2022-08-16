@@ -1,9 +1,1 @@
-<%= form_for(@task) do |form|%>
-  <%= form.label :title %>
-  <%= form.text_field :title %>
-  <%= form.label :details %>
-  <%= form.text_field :details %>
-  <%= form.submit %>
-<% end %>
-
-<%= link_to "Back to tasks list", tasks_path%>
+<%= render "form", restaurant: @restaurant %>
